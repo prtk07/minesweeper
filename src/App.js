@@ -33,7 +33,6 @@ function App() {
     for (let i = 0; i < row; i++) {
       for (let j = 0; j < column; j++) {
         let adjacentMineCount = 0;
-        //0 2
         if (tempMatrix[i][j] === "💣") continue;
 
         if (i - 1 >= 0 && j - 1 >= 0 && tempMatrix[i - 1][j - 1] === "💣")
@@ -42,7 +41,7 @@ function App() {
         if (i - 1 >= 0 && j + 1 < column && tempMatrix[i - 1][j + 1] === "💣")
           adjacentMineCount++;
         if (j - 1 >= 0 && tempMatrix[i][j - 1] === "💣") adjacentMineCount++;
-        if (i - 1 >= 0 && j + 1 < column && tempMatrix[i][j + 1] === "💣")
+        if (i >= 0 && j + 1 < column && tempMatrix[i][j + 1] === "💣")
           adjacentMineCount++;
         if (i + 1 < row && j - 1 >= 0 && tempMatrix[i + 1][j - 1] === "💣")
           adjacentMineCount++;
