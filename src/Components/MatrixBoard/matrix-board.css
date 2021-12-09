@@ -1,7 +1,7 @@
 .matrix-container {
   /* border: 1px solid black; */
-  width: 47vw;
-  height: 47vw;
+  width: 45vw;
+  height: 45vw;
   display: grid;
   gap: 2px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
